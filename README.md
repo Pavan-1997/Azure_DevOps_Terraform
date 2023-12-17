@@ -54,6 +54,8 @@
 	
 	Atlast rename the pipeline -> Click on Save
 
+![INFRA-VM](https://github.com/Pavan-1997/Azure_DevOps_Terraform/assets/32020205/4734defa-cc95-427d-859e-311c5a301d13)
+
 
 6. Now add another stage for destruction in same pipeline created earlier by cloning the previous stage
 
