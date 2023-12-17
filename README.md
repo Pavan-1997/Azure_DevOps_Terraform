@@ -76,6 +76,8 @@
 
 ![RELEASE-DESTROY-APPROVE](https://github.com/Pavan-1997/Azure_DevOps_Terraform/assets/32020205/0c49f8b0-36cf-4f56-8e99-44e67679329f)
 
+![RELEASE-DESTROY-APPROVE1](https://github.com/Pavan-1997/Azure_DevOps_Terraform/assets/32020205/74e600f3-0b25-422b-9494-32a9e6f91cde)
+
 ![RELEASE-DESTROY](https://github.com/Pavan-1997/Azure_DevOps_Terraform/assets/32020205/6e89d837-e72f-44e0-b3c2-0a47364b9db8)
 
 
