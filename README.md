@@ -5,7 +5,7 @@
 
 2. Create a New project 
 
-Give Project name -> Click on Create
+	Give Project name -> Click on Create
 
 
 3. Goto Repos -> Files -> Click on Import -> Give the Terraform Files Repo URL in Clone URL feild -> Click on Import 
@@ -13,34 +13,34 @@ Give Project name -> Click on Create
 
 4. For BUILD Pipleline - Now goto Pipelines -> Click on Create Pipeline -> Select the Azure Repos Git -> Select the repository created from the cloned URL -> Click on Started pipeline -> Give a YAML file from the repo snd click on Save and Run 
 
-For permission error -> Click on Authorize
+	For permission error -> Click on Authorize
 
 
 5. For RELEASE Pipleline - Now goto Pipelines -> Click on Releases -> Click on New pipeline -> Select the Empty job
+	
+	Click on Add an artifact -> Source type - Build -> Select source as the repo name -> Click on Add
+	
+	Click on the Continous deployment trigger for the Artifact -> Enable it -> Build branch filters - The build pipeline's default branch 
+	
+	Goto Deployment task -> Select your self-hosted Agent pool created 
 
-Click on Add an artifact -> Source type - Build -> Select source as the repo name -> Click on Add
-
-Click on the Continous deployment trigger for the Artifact -> Enable it -> Build branch filters - The build pipeline's default branch 
-
-Goto Deployment task -> Select your self-hosted Agent pool created 
-
---- Click on + to add another task -> Search and add Install Extract files -> Give below feilds
-
-Archive file patterns - _$(Build.DefinitionName)/$(Build.BuildId)-
-						build/$(Build.BuildId).zip
-
-Destination folder - '$(System.DefaultWorkingDirectory)/'
-
-
---- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
-
-Display name - Terraform - init
-
-Select the Azure subscription
-
-Select the previously created Resource-group, Storage account, Container, Key - prod.terraform.tfstate
-
---- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
+	--- Click on + to add another task -> Search and add Install Extract files -> Give below feilds
+	
+	Archive file patterns - _$(Build.DefinitionName)/$(Build.BuildId)-
+							build/$(Build.BuildId).zip
+	
+	Destination folder - '$(System.DefaultWorkingDirectory)/'
+	
+	
+	--- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
+	
+	Display name - Terraform - init
+	
+	Select the Azure subscription
+	
+	Select the previously created Resource-group, Storage account, Container, Key - prod.terraform.tfstate
+	
+	--- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
 
 Command - apply 
 
