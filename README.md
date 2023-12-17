@@ -54,6 +54,8 @@
 	
 	Atlast rename the pipeline -> Click on Save
 
+![RELEASE-DEPLOY](https://github.com/Pavan-1997/Azure_DevOps_Terraform/assets/32020205/85b3b9bb-5e25-4e2a-a0d4-ff97cd64032c)
+
 ![INFRA-VM](https://github.com/Pavan-1997/Azure_DevOps_Terraform/assets/32020205/4734defa-cc95-427d-859e-311c5a301d13)
 
 
