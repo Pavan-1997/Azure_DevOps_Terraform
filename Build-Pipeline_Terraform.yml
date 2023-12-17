@@ -16,7 +16,7 @@ stages:
       inputs:
         provider: 'azurerm'
         command: 'init'
-        backendServiceArm: 'Azure subscription(c20379ae-4a34-42d6-bef7-55273c6630f6)'
+        backendServiceArm: 'Azure subscription(***)'
         backendAzureRmResourceGroupName: 'demo-resources'
         backendAzureRmStorageAccountName: 'spavanraj97'
         backendAzureRmContainerName: 'prod-tfstate'
@@ -35,7 +35,7 @@ stages:
         command: 'custom'
         customCommand: 'fmt'
         outputTo: 'console'
-        environmentServiceNameAzureRM: 'Azure subscription(c20379ae-4a34-42d6-bef7-55273c6630f6)'
+        environmentServiceNameAzureRM: 'Azure subscription(***)'
       
     - task: TerraformTaskV4@4
       displayName: Tf plan
@@ -43,7 +43,7 @@ stages:
         provider: 'azurerm'
         command: 'plan'
         commandOptions: '-out $(Build.SourcesDirectory)/tfplanfile'
-        environmentServiceNameAzureRM: 'Azure subscription(c20379ae-4a34-42d6-bef7-55273c6630f6)'
+        environmentServiceNameAzureRM: 'Azure subscription(***)'
       
     - task: ArchiveFiles@2
       displayName: Archive files
