@@ -10,6 +10,8 @@
 
 3. Goto Repos -> Files -> Click on Import -> Give the Terraform Files Repo URL in Clone URL feild -> Click on Import 
 
+![STATE-FILE](https://github.com/Pavan-1997/Azure_DevOps_Terraform/assets/32020205/dc5f70be-692c-4d9b-8e69-e857154766ee)
+
 
 4. For BUILD Pipleline - Now goto Pipelines -> Click on Create Pipeline -> Select the Azure Repos Git -> Select the repository created from the cloned URL -> Click on Started pipeline -> Give a YAML file from the repo snd click on Save and Run 
 
