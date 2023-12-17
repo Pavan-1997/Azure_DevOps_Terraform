@@ -24,7 +24,7 @@
 	
 	Goto Deployment task -> Select your self-hosted Agent pool created 
 
-	--- Click on + to add another task -> Search and add Install Extract files -> Give below feilds
+	- Click on + to add another task -> Search and add Install Extract files -> Give below feilds
 	
 	Archive file patterns - _$(Build.DefinitionName)/$(Build.BuildId)-
 							build/$(Build.BuildId).zip
@@ -32,7 +32,7 @@
 	Destination folder - '$(System.DefaultWorkingDirectory)/'
 	
 	
-	--- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
+	- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
 	
 	Display name - Terraform - init
 	
@@ -40,7 +40,7 @@
 	
 	Select the previously created Resource-group, Storage account, Container, Key - prod.terraform.tfstate
 	
-	--- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
+	- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
 
 	Command - apply 
 	
