@@ -42,32 +42,32 @@
 	
 	--- Click on + to add another task -> Search and add Install Terraform -> Give below feilds
 
-Command - apply 
-
-Additional command arguments - --auto-approve
-
-Select the Azure subscription
-
-Atlast rename the pipeline -> Click on Save
+	Command - apply 
+	
+	Additional command arguments - --auto-approve
+	
+	Select the Azure subscription
+	
+	Atlast rename the pipeline -> Click on Save
 
 
 6. Now add another stage for destruction in same pipeline created earlier by cloning the previous stage
 
-Now click on the tasks
-
-Just chnage the last task Command - destroy 
-
-Click on Save
+	Now click on the tasks
+	
+	Just chnage the last task Command - destroy 
+	
+	Click on Save
 
 
 7. Click on the Pre-deployment conditions for Destroy stage -> Pre-deployment approvals -> Approvers - Self -> Timeout - 2
 
-Save the pipeline
+	Save the pipeline
 
 
-
-Build.SourcesDirectory = 
-Build.ArtifactStagingDirectory = 
+````
+Build.SourcesDirectory = NA
+Build.ArtifactStagingDirectory = NA
 
 Build.BuildId = 44
 Build.DefinitionName = Day8_Terraform
@@ -93,3 +93,4 @@ INIT - '$(System.DefaultWorkingDirectory)/'
 PLAN - '$(System.DefaultWorkingDirectory)/'
 
  	/home/ubuntu/_work/r1/a/
+```
