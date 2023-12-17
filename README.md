@@ -15,6 +15,8 @@
 
 	For permission error -> Click on Authorize
 
+![TF-CI](https://github.com/Pavan-1997/Azure_DevOps_Terraform/assets/32020205/ba6dbe6c-37c6-4d60-ad71-41ecbde30681)
+
 
 5. For RELEASE Pipleline - Now goto Pipelines -> Click on Releases -> Click on New pipeline -> Select the Empty job
 	
